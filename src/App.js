@@ -23,7 +23,6 @@ const App = () => {
   return (
     <>
       <div className="container py-5 bg-light text-center">      
-        <p>hola</p>
         <h1>CONTADOR</h1>
         <button
           data-testid="aumentar"
@@ -49,7 +48,7 @@ const App = () => {
           className="btn2 btn btn-warning">
           X2
         </button>
-        <h3 className="p-4">{contador}</h3>
+        <p data-testid="contador" className="p-4">{contador}</p>
         <button
           data-testid="reset"
           onClick={reset}
